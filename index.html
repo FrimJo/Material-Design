@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="sv">
+	<head>
+		<title>Design by Fredrik</title>
+
+		<!-- Load Meta -->
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">  
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">  
+		
+		<!-- Load CSS. -->
+		<link rel="stylesheet" type="text/css" href="lib/reset.css">
+		<link rel="stylesheet" type="text/css" href="lib/style.css">
+		<link rel="stylesheet" href="lib/jquery-ui-1.11.3/jquery-ui.min.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+		<!-- <script src="lib/jquery-2.1.3.min.js"></script> -->
+		
+		<!-- Load jquery -->
+		<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<!--		<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+<!--		<script src="lib/jquery-ui-1.11.3/jquery-ui.min.js"></script> -->
+
+		<!-- Load webcomponents.js for polyfill support. -->
+<!--		<script src="components/webcomponentsjs/webcomponents.js"></script>-->
+		
+
+		<!-- Use an HTML Import to bring in the element. -->
+<!--    <link rel="import" href="components/paper-shadow/paper-shadow.html">
+	    <link rel="import" href="components/paper-button/paper-button.html">
+
+		<link rel="import" href="components/polymer-slidenav/dist/polymer-slidenav.html">
+
+		<link rel="import" href="components/paper-ripple/paper-ripple.html"> -->
+		<link rel="import" href="components/core-icons/core-icons.html">
+	    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,700' rel='stylesheet' type='text/css'>
+
+	</head>
+	<body>
+		<div class="media-detector"></div>
+		<div id="header_goes_here"></div> <!-- This DIV is loaded from script.js -->
+
+		<div id="big-picture">
+			<div id="big-border">
+			<h3>Portfolio</h3>
+			<h4 id="small-text">Fredrik Johansson</h4>
+			</div>
+		</div>
+		
+		<main> <!-- This MAIN is loaded from script.js when a card is pressed -->
+			
+		
+			<div class="card" name="projects/varramie.html">
+				<div class="card_top">
+					<img src="lib/varramie_350x250.jpg" alt="">	
+				</div>
+				<div class="card_bottom" style="background-color: rgba(186,104,200,1);">
+					<div class="vertical_center_div">
+						<p class="p_white">Varramie</p>
+						<p class="p_hidden">Android & LiquidFun</d>
+					</div>
+				</div>
+	            <div class="load_container"></div>
+			</div>
+			
+			<div class="card" z="1" animated="true" name="projects/greed.html">
+	            <div class="card_top">
+	               	<img src="lib/greed_350x250.jpg" alt="">
+	            </div>
+	            <div class="card_bottom" style="background-color: rgba(77,182,172,1);">
+					<div class="vertical_center_div">
+	                	<p class="p_white">Greed</p>
+						<p class="p_hidden">Android Dice Game</d>
+					</div>
+	            </div>
+	            <div class="load_container"></div>
+	        </div>
+
+			<!--<div class="card" z="1" animated="true"  name="projects/distribution2.html">
+				<div class="card_top">
+					<img src="lib/superstore_350x250.jpg" alt="">	
+				</div>
+				<div class="card_bottom" style="background-color: rgba(100,181,246,1);">
+					<div class="vertical_center_div">
+						<p class="p_white">Superstore</p>
+						<p class="p_hidden">Ubiquitous</d>
+					</div>
+				</div>
+	            <div class="load_container"></div>
+			</div>-->
+
+			<div class="card" z="1" animated="true"  name="projects/room_booking.html">
+				<div class="card_top">
+					<img src="lib/dohi_350x250.jpg" alt="">	
+				</div>
+				<div class="card_bottom" style="background-color: rgba(100,181,246,1);">
+					<div class="vertical_center_div">
+						<p class="p_white">Room Booking</p>
+						<p class="p_hidden">Design Build Test</d>
+					</div>
+				</div>
+	            <div class="load_container"></div>
+			</div>
+			
+			<!--<div class="card" z="1" animated="true"  name="proj1.test.html">
+				<div class="card_top">
+					<img src="lib/stugan_350x250.jpg" alt="">	
+				</div>
+				<div class="card_bottom" style="background-color: rgba(186,104,200,1);">
+					<div class="vertical_center_div">
+						<p class="p_white">Fiskarbastu</p>
+						<p class="p_hidden">Booking System</d>
+					</div>
+				</div>
+	            <div class="load_container"></div>
+			</div>-->
+			
+			<!--<div class="card" z="1" animated="true"  name="proj1.test.html">
+				<div class="card_top">
+					<img src="lib/upload_350x250.jpg" alt="">	
+				</div>
+				<div class="card_bottom" style="background-color: rgba(229,115,115,1);">
+					<div class="vertical_center_div">
+						<p class="p_white">DFS UpLoad</p>
+						<p class="p_hidden">Wordpress web page</d>
+					</div>
+				</div>
+	            <div class="load_container"></div>
+			</div>-->
+			
+			
+
+		</main>
+		<footer>
+		
+			<!-- Load other js-files. -->
+			
+			<script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js'></script>
+			<script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSRulePlugin.min.js'></script>
+			<script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/TextPlugin.min.js'></script>
+			<script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/ScrollToPlugin.min.js'></script>
+			<script src="lib/EasePack.min.js"></script>
+			<script src="lib/TimelineLite.min.js"></script>
+			<script src='http://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.3.1/lodash.min.js'></script>
+			<script src="lib/script.js"></script>
+			<script src="lib/polymer-slidenav.js"></script>
+		</footer>
+	</body>
+</html>

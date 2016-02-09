@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="sv">
+	<head>
+		<title>DESIGN BY FREDRIK</title>
+
+		<!-- Load Meta -->
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">  
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+		<meta name="mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">  
+		
+		<!-- Load CSS. -->
+		<!--<link rel="stylesheet" type="text/css" href="lib/debugg.css"> -->
+		<link rel="stylesheet" type="text/css" href="lib/reset.css">
+		<link rel="stylesheet" type="text/css" href="lib/style.css">
+		<link rel="stylesheet" type="text/css" href="lib/polymer-slidenav.css" media="(max-width: 476px)">
+		
+		<!-- Load webcomponents.js for polyfill support. -->
+		<script src="lib/jquery-1.11.2.min.js"></script>
+	    <script src="components/webcomponentsjs/webcomponents.js"></script>
+	    <script src="lib/script.js"></script>
+
+	    <!-- Use an HTML Import to bring in the element. -->
+	    <link rel="import" href="components/paper-shadow/paper-shadow.html">
+	    <link rel="import" href="components/paper-button/paper-button.html">
+	    <link rel="import" href="components/font-roboto/roboto.html">
+		<link rel="import" href="components/polymer-slidenav/dist/polymer-slidenav.html">
+		<link rel="import" href="components/core-icons/core-icons.html">
+		<link rel="import" href="components/paper-ripple/paper-ripple.html">
+	</head>
+	<body>
+		
+		<div id="header_goes_here"></div> <!-- This DIV is loaded from script.js -->
+		
+			<main>
+				<div id="big-picture" style="background-image: none; background-color: #64b5f6;">
+					<h3>PROJEKT: SUPERSTORE</h3>
+				</div> 
+				
+				<div id="container">
+					<paper-shadow class="card" z="0" style="margin: 40px;">
+						<img class="top_left_pic" src="lib/super_logo.png" alt="" style="background-color: rgba(0,0,0,0.87);">
+						<h2 style="color: #E57373;">Cow cillum salami</h2>
+						<p class="p_black">Aliquip rump kevin ipsum tri-tip exercitation excepteur beef ribs. Shankle rump ham prosciutto cupim voluptate capicola pork chop brisket, sirloin irure. Pork cupidatat ribeye sirloin fugiat. Enim pig deserunt tongue short loin tail frankfurter dolore fatback. Ut fatback excepteur in pork chop.</p>
+					</paper-shadow>
+					<paper-shadow class="card" z="0" style="margin: 40px;">
+						<img class="top_left_pic" src="lib/ubiq_code_small.jpg" alt="">
+						<h2 style="color: #E57373;">Capicola hamburger</h2>
+						<p class="p_black">Sed strip steak veniam corned beef quis pork loin mollit culpa sint boudin turducken. Pork belly picanha aute shankle hamburger tail nisi excepteur short loin eiusmod aliquip landjaeger. Ea tongue tempor in. Cow cillum salami leberkas, nostrud jerky ball tip incididunt ullamco eiusmod. Capicola hamburger sed alcatra occaecat quis pork chop doner consequat laboris ex bresaola jowl cow ea. Labore rump shoulder tail beef officia kevin.</p>
+					</paper-shadow>
+					<paper-shadow class="card" z="0" style="margin: 40px;">
+						<img class="top_left_pic" src="lib/ubiq_code_small.jpg" alt="">
+						<h2 style="color: #E57373;">Fatback filet mignon</h2>
+						<p class="p_black">Duis pariatur quis fatback filet mignon cow doner, aliqua jerky cillum enim beef ribs exercitation pork chop. Reprehenderit t-bone officia in anim. Pork loin nostrud consequat, minim turkey tail proident quis velit. Exercitation jowl bacon, meatball et culpa ribeye aliqua chuck rump. Qui tri-tip nisi kielbasa kevin laborum.</p>
+					</paper-shadow>
+				</div>
+			</main>
+
+			<footer></footer>
+	</body>
+</html>

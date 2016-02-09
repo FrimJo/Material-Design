@@ -1,0 +1,55 @@
+<div class="container">
+	<h5>About</h5>
+	<p>This is a project where I worked alone on an Android Application for five weeks during the summer of 2015. The application was developed for the purpose of being used as research foundation for the product owners PHD.</p>
+	<p>The purpose of this application is for users to use the touchscreen, which creates a circular blob looking liquid, and move the finger around the screen moving the blob. This blob is also shown for all other users of the application, and if two users blobs collide the mobile phone or tablet vibrates, this can also be turned off in the settings menu.</p>
+	<p>On the server side a Google form can be sent out to all users of the application, containing each users unique identification number, for them to fill out.</p>
+	<p>Each user of the application can also log in through Facebook and send invites to friends to try out this application.</p>
+	<!--<img src="http://placehold.it/350x150" alt="">-->
+	
+	<div id="fb-root">
+		
+	</div>
+	<script>
+		(function(d, s, id) {
+			var js, fjs = d.getElementsByTagName(s)[0];
+			if (d.getElementById(id)) return;
+			js = d.createElement(s);
+			js.id = id;
+			js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.3";
+			fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+	<div class="fb-video has-border" data-allowfullscreen="1" data-href="/varra.viermie/videos/vb.100009477674032/1428966010762641/?type=3">
+		<div class="fb-xfbml-parse-ignore">
+			<blockquote cite="https://www.facebook.com/varra.viermie/videos/1428966010762641/">
+				<a href="https://www.facebook.com/varra.viermie/videos/1428966010762641/"></a>
+				<p>Small step for this App</p>Posted by <a href="https://www.facebook.com/varra.viermie">Varra Viermie</a> on Wednesday, July 1, 2015
+			</blockquote>
+		</div>
+	</div>
+	
+	<p>This project or was a huge challenge for me since I hadn't done so much Android development in before hand and the project involved many different technical areas I hadn't visited that much. Below is the different parts this project I had to implement, and I will go more in depth on each one further down.</p>
+	<h5>The work consist of</h5>
+	<ul class="unordered-list">
+		<li><i class="material-icons">keyboard_arrow_right</i>Network programming, client and server</li>
+		<li><i class="material-icons">keyboard_arrow_right</i>Database management, SQL</li>
+		<li><i class="material-icons">keyboard_arrow_right</i>Physics engine, Googles LiquidFun</li>
+		<li><i class="material-icons">keyboard_arrow_right</i>Graphics using OpenGL ES</li>
+		<li><i class="material-icons">keyboard_arrow_right</i>Facebook API integration</li>
+	</ul>
+<!--	<img src="http://placehold.it/350x350" alt="">-->
+	
+	
+	
+	<h5>Network</h5>
+	<p>The communication between the Varramie Application and the Java server, which runs on a PC, is handled through the UDP protocol to which I have written all the packages that is being sent between the application and the server. I choose the UDP protocol in front of the TCP protocol because I wasn't that concerned of packages was being lost and was looking for high performance.</p>
+	<p>For this part of the project I had a lot of help from a server/client chat program I wrote together with a classmate. From that project I could reuse some classes for the UDP communication.</p>
+	<h5>SQL</h5>
+	<p>For this I wrote a small data access layer for storing data on a SQL server. The server saves all coordinates of movements and collisions together with a identification number for each user to be used in Google forms. This was done to save material to use as basis for the product owners PHD.</p>
+	<h5>LiquidFun</h5>
+	<p>Probably the part of the project I enjoyed the most, but also the trickiest. I used <a href="https://github.com/google/liquidfun" target="_blank">Googles LiquidFun</a> which was originally written to be used with C, but I found a port to Java called <a href="https://github.com/jbox2d/jbox2d" target="_blank">JBox2D</a> which I used. At the time the documentation was limited and some functionalities weren't implemented so I found it hard to get it work as I expected, but eventually I found a way to get it behave almost as I wanted.</p>
+	<h5>OpenGL ES</h5>
+	<p>This part was probably the hardest one because of my limited experience with 3D graphic programing. The rendering of the blobs could have been a lot smoother, but since the time was limited I focused on other parts. Though if this project is to be continued I hope to have the time to develop better looking blobs by adding some blur to all the particles inside each blob and then set a threshold value for the alpha to get a smooth blob. As ju can se <a href="http://www.patrickmatte.com/stuff/physicsLiquid/" target="_blank">here</a></p>
+	<p>You can find the project at GitHub <a href="https://github.com/FrimJo/Varramie_Client_Android" target="_blank">here</a></p>
+	<p>I would also love to develop an iOS version of the application.</p>
+</div>

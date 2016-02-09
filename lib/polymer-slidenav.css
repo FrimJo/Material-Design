@@ -1,0 +1,162 @@
+
+body {
+	padding-top: 50px;
+}
+
+header {
+  padding: 0px;
+}
+
+#header_goes_here {
+	position: fixed;
+	z-index: 10000;
+	top: 0;
+}
+
+#headline {
+  padding-right: 30px;
+}
+
+.card{
+	margin: 4vw;
+	display: block;
+	width: 92vw;
+	height: 92vw;
+}
+
+.card-active {
+	z-index: 1;
+}
+
+.card_top {
+  height: 61vw;
+}
+
+.card_bottom {
+  height: 31vw;
+}
+
+#big-picture{
+  /*display: none;*/
+	background-color: rgba(0,0,0,0.68);
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	border-top: 1px solid rgba(0,0,0,0.12);
+	height: 412px;
+	-webkit-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+   	-moz-box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+	box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.37);
+}
+
+.big-picture-active {
+	display: block !important;
+	z-index: 2;
+}
+
+/* Icon Button */
+.icon-button {
+  position: relative;
+  display: inline-block;
+  color: rgba(0,0,0,0.54);
+}
+
+.icon-button > core-icon {
+  margin: 10px;
+  padding: 3px;
+  transition: -webkit-transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-button:hover > core-icon {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.icon-button > paper-ripple {
+  overflow: hidden;
+  color: #646464;
+}
+
+#sl-toggle {
+  display: table-cell;
+}
+
+#headline {
+  display: table-cell;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#headline h1 {
+  padding-left: 0px;
+  font-weight: lighter;
+  text-transform: none;
+  font-size: 1.0rem;
+}
+
+#sidenav{
+  background: rgb(63,63,63);
+  box-shadow: rgb(34, 34, 34) 0px -3px 10px 1px inset;
+}
+
+#sidenav ul {
+  width: 100%;
+  padding: 20px;
+  margin: 0px;
+  padding: 0px;
+}
+
+#sidenav ul li{
+  display: block;
+  list-style: none;
+  line-height: 1.9rem;
+  
+  /* these styles are neede for the slide animation */
+  -webkit-transition: -webkit-transform .55s cubic-bezier(0.525, -0.110, 0.355, 1.000), opacity 1.3s;
+  transition: transform .55s cubic-bezier(0.525, -0.110, 0.355, 1.000), opacity 1.3s;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1;
+}
+
+#sidenav ul li.off-screen {
+  -webkit-transform: translateX(-10%);
+  transform: translateX(-10%);
+  opacity: 0;
+}
+
+#sidenav ul li paper-button {
+  width: 100%;
+  color: rgb(200,200,200);
+  /*padding-right: 400px;*/
+  margin: 0px;
+}
+
+#sidenav ul li paper-button:hover {
+  color: rgb(240,240,240);  		
+}
+
+.click {
+	height: 100%;
+	width: 100%;
+	top: 0px;
+	left: 0px;
+	margin: 0px;
+}
+
+.front-card {
+	background-color: green;
+	width: 92vw;
+	height: 92vw;
+	position: absolute;
+}
+
+.hide {
+	opacity: 0 !important;
+}
+
+.animation_circle {
+	
+}

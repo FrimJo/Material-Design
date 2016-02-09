@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="sw">
+	<head>
+		<!-- Load Meta -->
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">  
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">  
+		<meta name="apple-mobile-web-app-capable" content="yes">  
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">  
+		
+
+		<!-- Load CSS. -->
+		<link rel="stylesheet" type="text/css" href="lib/reset.css">
+		<!--<link rel="stylesheet" type="text/css" href="lib/debugg.css"> <link rel="stylesheet"-->
+		<link rel="stylesheet" type="text/css" href="lib/style.css" shim-shadowdom>
+		<link rel="stylesheet" type="text/css" href="lib/polymer-slidenav.css" media="(orientation: portrait),(max-width: 618px)">
+		
+		<!-- Load webcomponents.js for polyfill support. -->
+	    <script src="../components/webcomponentsjs/webcomponents.js"></script>
+		<script src="lib/polymer-slidenav.js"></script>
+
+	    <!-- Use an HTML Import to bring in the element. -->
+	    <link rel="import" href="../components/paper-shadow/paper-shadow.html">
+	    <link rel="import" href="../components/paper-button/paper-button.html">
+	    <link rel="import" href="../components/font-roboto/roboto.html">
+		<link rel="import" href="../components/polymer-slidenav-master/src/polymer-slidenav.html">
+
+	</head>
+	<body unresolved>
+		<polymer-slidenav speed=".5s" togglerUnder="true">
+	    	<slidenav-menu>
+				<ul id="menu" class="sl-menu">
+					<li><paper-button onclick="window.open('#','_self');">LINK1</a></paper-button></li>
+					<li><paper-button onclick="window.open('#','_self');">LINK2</a></paper-button></li>
+					<li><paper-button onclick="window.open('#','_self');">LINK3</a></paper-button></li>
+					<li><paper-button onclick="window.open('#','_self');">LINK4</a></paper-button></li>
+					<li><paper-button onclick="window.open('#','_self');">LINK5</a></paper-button></li>
+					<li><paper-button onclick="window.open('#','_self');">LINK6</a></paper-button></li>
+				</ul>
+	    	</slidenav-menu>
+	  		<slidenav-toggler class="sl-toggle">
+				<svg width="30" height="30" id="icoOpen2">
+					<path d="M0,5 30,5" stroke="rgb(78,78,78)" stroke-width="4"></path>
+					<path d="M0,12 30,12" stroke="rgb(78,78,78)" stroke-width="4"></path>
+					<path d="M0,19 30,19" stroke="rgb(78,78,78)" stroke-width="4"></path>
+				</svg>  
+			</slidenav-toggler>
+	    </polymer-slidenav> 
+		
+		<div id="container">
+			<header id="top-header">
+				<h1>DESIGN BY FREDRIK</h1>
+				<paper-button onclick="window.open('#','_self');">LINK1</a></paper-button>
+				<paper-button onclick="window.open('#','_self');">LINK1</a></paper-button>
+				<paper-button onclick="window.open('#','_self');">LINK1</a></paper-button>
+				<paper-button onclick="window.open('#','_self');">LINK1</a></paper-button>
+				<paper-button onclick="window.open('#','_self');">LINK1</a></paper-button>
+			</header>
+			<main>
+				<section id="big-picture">
+					<!--<img src="lib/apple_desktop-1920x1080.jpg">-->
+				</section>
+				<section id="card-container">
+					<paper-shadow id="card" z="2">
+						<img src="lib/JavaCode.jpg"></img>
+						<p>Located two houes south of sydney in the Southern Highlands of New South Wales, ...</p>
+						
+						<div id="buttons">
+							<paper-button noink>SHARE</paper-button> <paper-button noink>EXPLORE</paper-button>
+						</div>
+					</paper-shadow>
+						
+					<paper-shadow id="card" z="2">
+						<img src="lib/JavaScriptCode.jpg"></img>
+						<p>Located two houes south of sydney in the Southern Highlands of New South Wales, ...</p>
+						
+						<div id="buttons">
+							<paper-button noink>SHARE</paper-button> <paper-button noink>EXPLORE</paper-button>
+						</div>
+					</paper-shadow>
+
+					<paper-shadow id="card" z="2">
+						<img src="lib/swiftCode.jpg"></img>
+						<p>Located two houes south of sydney in the Southern Highlands of New South Wales, ...</p>
+						
+						<div id="buttons">
+							<paper-button noink>SHARE</paper-button> <paper-button noink>EXPLORE</paper-button>
+						</div>
+					</paper-shadow>
+
+					<paper-shadow id="card" z="2">
+						<img src="lib/objcCode.jpg"></img>
+						<p>Located two houes south of sydney in the Southern Highlands of New South Wales, ...</p>
+						
+						<div id="buttons">
+							<paper-button noink>SHARE</paper-button> <paper-button noink>EXPLORE</paper-button>
+						</div>
+					</paper-shadow>
+				</section>
+			</main>
+			<footer></footer>
+		</div>
+	</body>
+</html>

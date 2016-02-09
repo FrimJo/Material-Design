@@ -1,0 +1,79 @@
+html, body {
+  font-size: 100%;
+}
+
+#card{
+  width: auto;
+
+}
+
+#top-header {
+  padding: 15px;
+  text-align: center;
+  
+}
+
+#top-header paper-button {
+  display: none;
+}
+
+#big-picture{
+  display: none;
+}
+
+.sl-toggle {
+  display: inline;
+}
+
+polymer-slidenav{
+  position: relative;
+  width: 100%;
+  background: rgb(63,63,63);
+  color: rgb(200,200,200);
+}
+
+svg{
+  padding: 10px;
+  width: 40px;
+  display: block;    		
+}
+
+slidenav-menu{
+  box-shadow: rgb(34, 34, 34) 0px -3px 10px 1px inset;
+}
+
+.sl-toggle{
+  position: absolute;
+}
+.sl-menu{
+  width: 100%;
+  padding: 20px;
+  margin: 0;
+  padding-left: 0;
+}
+
+.sl-menu li paper-button{
+  padding: 0px;   
+}
+
+.sl-menu li paper-button:hover{
+  color: rgb(240,240,240);  		
+}
+
+.sl-menu li{
+  list-style: none;
+  line-height: 1.9rem;
+  /*padding-left: 10px;*/
+  
+  /* these styles are neede for the slide animation */
+  -webkit-transition: -webkit-transform .55s cubic-bezier(0.525, -0.110, 0.355, 1.000), opacity 1.3s;
+  transition: transform .55s cubic-bezier(0.525, -0.110, 0.355, 1.000), opacity 1.3s;
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+  opacity: 1;
+}
+.sl-menu li.off-screen{
+  -webkit-transform: translateX(-10%);
+  transform: translateX(-10%);
+  opacity: 0;
+}

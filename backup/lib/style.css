@@ -1,0 +1,89 @@
+html, body {
+	font-family: 'RobotoDraft', sans-serif;
+	height: 100%;
+	width: 100%;
+	background-color: #eeeeef;
+	/*margin: 1rem;*/
+	font-size: 100%;
+	color: rgb(12,12,12);
+
+	/*transition: font-size 0.5s;*/
+}
+
+h1 {
+	font-family: 'Arial', sans-serif;
+	font-size: 2rem;
+	font-weight: bold;
+	color: rgb(78,78,78);
+	margin-left: 20px;
+}
+
+#container {
+	height: 100rem;
+	width: 100%;
+	/*padding: 2rem;*/
+	background-color: #eeeeef;
+}
+
+#card-container{
+	width: 100%;
+	/*margin: 1rem;*/
+
+}
+
+.sl-toggle {
+	/*position: absolute;
+	visibility: hidden;*/
+	display: none;
+}
+
+#card{
+	/*float: left;*/
+	display: inline-block;
+	/*min-width: 17rem;*/
+	width: 27rem;
+	margin: 1rem;
+	background-color: white;
+}
+
+#card > img {
+	width: 100%;
+}
+
+#card > p {
+	font-size: 1rem;
+	margin: 0.5rem;
+	line-height: 150%;
+}
+
+#card #buttons {
+	border-top: solid 1px #cccccc;
+}
+
+#top-header {
+	border-bottom: 1px solid rgb(168,168,168);
+	
+	background: #ffffff;
+	/*width: 100%;*/
+	padding-left: 4rem;
+	padding-right: 4rem;
+	padding-top: 30px;
+	padding-bottom: 30px;
+}
+
+#top-header paper-button {
+	font-family: 'RobotoDraft', sans-serif;
+	color: rgb(78,78,78);
+	padding: 10px;
+}
+
+#big-picture{
+	background-image: url("hi_tech_texture-wallpaper-3554x1999.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: left bottom;
+	border-bottom: 1px solid rgb(168,168,168);
+	height: 412px;
+	width: 100%;
+	
+}
